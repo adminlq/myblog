@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.single.myblog.dao.ArticleDao">
+	<sql id="articleColumns">
+		a.id AS "id",
+		a.author AS "author",
+		a.clickCount AS "clickCount",
+		a.columns AS "columns",
+		a.createDate AS "createDate",
+		a.imgurl AS "imgurl",
+		a.recommend AS "recommend",
+		a.title AS "title",
+		a.content AS "content",
+		a.sumary AS "sumary"
+	</sql>
+	
+	<select id="getById" resultType="Article">
+		SELECT
+			<include refid="articleColumns"/>
+		FROM article a 
+		<where>
+			a.id=#{id}
+		</where>
+	</select>
+	
+	<select id="findRecommend" resultType="Article">
+		SELECT
+			<include refid="articleColumns"/>
+		FROM article a 
+		WHERE
+			a.recommend=1
+		ORDER by
+		    a.createDate desc
+		LIMIT 10
+	</select>
+	
+	<select id="findHotClick" resultType="Article">
+		SELECT
+			<include refid="articleColumns"/>
+		FROM article a 
+		ORDER by
+		    a.clickCount, a.createDate desc
+		LIMIT 10
+	</select>
+	
+	<select id="findAll" resultType="Article">
+		SELECT
+			<include refid="articleColumns"/>
+		FROM article a 
+		ORDER by
+		    a.createDate desc
+		LIMIT 0,5
+	</select>
+</mapper>

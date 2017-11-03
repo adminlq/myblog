@@ -1,0 +1,681 @@
+2017-11-01 13:42:49.767 [main] INFO  com.single.myblog.Application -Starting Application on PC-201606032119 with PID 12084 (E:\workspace\myblog\target\classes started by Administrator in E:\workspace\myblog)
+2017-11-01 13:42:49.786 [main] INFO  com.single.myblog.Application -No active profile set, falling back to default profiles: default
+2017-11-01 13:42:49.905 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 13:42:49 CST 2017]; root of context hierarchy
+2017-11-01 13:42:52.918 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2017-11-01 13:42:52.979 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2017-11-01 13:42:52.980 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-01 13:42:53.225 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-11-01 13:42:53.226 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 3321 ms
+2017-11-01 13:42:53.644 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-01 13:42:53.650 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-01 13:42:53.651 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-01 13:42:53.652 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-01 13:42:53.653 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-01 13:42:53.653 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'myFilter' to urls: [/*]
+2017-11-01 13:42:55.093 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 13:42:49 CST 2017]; root of context hierarchy
+2017-11-01 13:42:55.309 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.single.myblog.web.HelloController.json()
+2017-11-01 13:42:55.312 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/hello]}" onto public java.lang.String com.single.myblog.web.HelloController.hello() throws com.single.myblog.handler.MyException
+2017-11-01 13:42:55.315 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user/list]}" onto public java.lang.String com.single.myblog.web.UserController.userList(java.lang.String)
+2017-11-01 13:42:55.325 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 13:42:55.326 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 13:42:55.400 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 13:42:55.401 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 13:42:55.436 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in restExceptionHandler
+2017-11-01 13:42:55.480 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 13:42:56.054 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-11-01 13:42:56.056 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-11-01 13:42:56.064 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-11-01 13:42:56.227 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http)
+2017-11-01 13:42:56.233 [main] INFO  com.single.myblog.Application -Started Application in 7.415 seconds (JVM running for 8.475)
+2017-11-01 13:43:10.843 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-01 13:43:10.844 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-01 13:43:10.885 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 41 ms
+2017-11-01 13:43:12.990 [http-nio-8080-exec-10] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Starting...
+2017-11-01 13:43:14.782 [http-nio-8080-exec-10] ERROR com.zaxxer.hikari.pool.HikariPool -testdb - Exception during pool initialization.
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:964)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3973)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:3909)
+	at com.mysql.jdbc.MysqlIO.checkErrorPacket(MysqlIO.java:873)
+	at com.mysql.jdbc.MysqlIO.proceedHandshakeWithPluggableAuthentication(MysqlIO.java:1710)
+	at com.mysql.jdbc.MysqlIO.doHandshake(MysqlIO.java:1226)
+	at com.mysql.jdbc.ConnectionImpl.coreConnect(ConnectionImpl.java:2191)
+	at com.mysql.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:2222)
+	at com.mysql.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:2017)
+	at com.mysql.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:779)
+	at com.mysql.jdbc.JDBC4Connection.<init>(JDBC4Connection.java:47)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at com.mysql.jdbc.Util.handleNewInstance(Util.java:425)
+	at com.mysql.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:389)
+	at com.mysql.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:330)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:117)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:123)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:375)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:204)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:445)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:516)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:116)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:97)
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:151)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82)
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68)
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336)
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:84)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:148)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:141)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433)
+	at com.sun.proxy.$Proxy60.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:137)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:75)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:59)
+	at com.sun.proxy.$Proxy64.findAll(Unknown Source)
+	at com.single.myblog.service.ipml.UserServiceImpl.findAll(UserServiceImpl.java:20)
+	at com.single.myblog.web.UserController.userList(UserController.java:24)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:209)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:871)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:777)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:991)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:925)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:978)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:881)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:855)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.single.myblog.filter.MyFilter.doFilter(MyFilter.java:35)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+2017-11-01 13:43:53.385 [main] INFO  com.single.myblog.Application -Starting Application on PC-201606032119 with PID 7036 (E:\workspace\myblog\target\classes started by Administrator in E:\workspace\myblog)
+2017-11-01 13:43:53.389 [main] INFO  com.single.myblog.Application -No active profile set, falling back to default profiles: default
+2017-11-01 13:43:53.515 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 13:43:53 CST 2017]; root of context hierarchy
+2017-11-01 13:43:56.056 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2017-11-01 13:43:56.078 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2017-11-01 13:43:56.080 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-01 13:43:56.254 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-11-01 13:43:56.256 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2740 ms
+2017-11-01 13:43:56.551 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-01 13:43:56.557 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-01 13:43:56.558 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-01 13:43:56.559 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-01 13:43:56.560 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-01 13:43:56.560 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'myFilter' to urls: [/*]
+2017-11-01 13:43:57.513 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 13:43:53 CST 2017]; root of context hierarchy
+2017-11-01 13:43:57.645 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.single.myblog.web.HelloController.json()
+2017-11-01 13:43:57.647 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/hello]}" onto public java.lang.String com.single.myblog.web.HelloController.hello() throws com.single.myblog.handler.MyException
+2017-11-01 13:43:57.649 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user/list]}" onto public java.lang.String com.single.myblog.web.UserController.userList(java.lang.String)
+2017-11-01 13:43:57.656 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 13:43:57.658 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 13:43:57.730 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 13:43:57.731 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 13:43:57.776 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in restExceptionHandler
+2017-11-01 13:43:57.858 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 13:43:58.745 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-11-01 13:43:58.748 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-11-01 13:43:58.757 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-11-01 13:43:58.859 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http)
+2017-11-01 13:43:58.869 [main] INFO  com.single.myblog.Application -Started Application in 5.943 seconds (JVM running for 6.773)
+2017-11-01 13:44:12.903 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-01 13:44:12.904 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-01 13:44:12.947 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms
+2017-11-01 13:44:13.151 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Starting...
+2017-11-01 13:44:14.374 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Start completed.
+2017-11-01 13:44:15.236 [http-nio-8080-exec-2] INFO  o.s.b.f.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2017-11-01 13:44:15.738 [http-nio-8080-exec-2] INFO  o.s.j.support.SQLErrorCodesFactory -SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2017-11-01 13:48:31.755 [main] INFO  com.single.myblog.Application -Starting Application on PC-201606032119 with PID 3624 (E:\workspace\myblog\target\classes started by Administrator in E:\workspace\myblog)
+2017-11-01 13:48:31.759 [main] INFO  com.single.myblog.Application -No active profile set, falling back to default profiles: default
+2017-11-01 13:48:31.858 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 13:48:31 CST 2017]; root of context hierarchy
+2017-11-01 13:48:34.251 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2017-11-01 13:48:34.277 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2017-11-01 13:48:34.279 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-01 13:48:34.479 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-11-01 13:48:34.480 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2622 ms
+2017-11-01 13:48:34.775 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-01 13:48:34.781 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-01 13:48:34.782 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-01 13:48:34.783 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-01 13:48:34.784 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-01 13:48:34.785 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'myFilter' to urls: [/*]
+2017-11-01 13:48:35.881 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 13:48:31 CST 2017]; root of context hierarchy
+2017-11-01 13:48:36.042 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.single.myblog.web.HelloController.json()
+2017-11-01 13:48:36.047 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/hello]}" onto public java.lang.String com.single.myblog.web.HelloController.hello() throws com.single.myblog.handler.MyException
+2017-11-01 13:48:36.052 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user/list]}" onto public java.lang.String com.single.myblog.web.UserController.userList(java.lang.String)
+2017-11-01 13:48:36.069 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 13:48:36.071 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 13:48:36.170 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 13:48:36.170 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 13:48:36.219 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in restExceptionHandler
+2017-11-01 13:48:36.340 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 13:48:36.798 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-11-01 13:48:36.801 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-11-01 13:48:36.810 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-11-01 13:48:36.927 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http)
+2017-11-01 13:48:36.936 [main] INFO  com.single.myblog.Application -Started Application in 5.658 seconds (JVM running for 6.372)
+2017-11-01 13:48:47.711 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-01 13:48:47.713 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-01 13:48:47.750 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 37 ms
+2017-11-01 13:48:48.020 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Starting...
+2017-11-01 13:48:48.471 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Start completed.
+2017-11-01 13:48:48.554 [http-nio-8080-exec-2] INFO  o.s.b.f.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2017-11-01 13:48:48.755 [http-nio-8080-exec-2] INFO  o.s.j.support.SQLErrorCodesFactory -SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2017-11-01 15:22:33.491 [main] INFO  com.single.myblog.Application -Starting Application on PC-201606032119 with PID 7068 (E:\workspace\myblog\target\classes started by Administrator in E:\workspace\myblog)
+2017-11-01 15:22:33.529 [main] INFO  com.single.myblog.Application -No active profile set, falling back to default profiles: default
+2017-11-01 15:22:33.741 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 15:22:33 CST 2017]; root of context hierarchy
+2017-11-01 15:22:37.584 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2017-11-01 15:22:37.610 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2017-11-01 15:22:37.612 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-01 15:22:37.844 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-11-01 15:22:37.845 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 4104 ms
+2017-11-01 15:22:38.192 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-01 15:22:38.198 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-01 15:22:38.199 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-01 15:22:38.200 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-01 15:22:38.201 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-01 15:22:38.201 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'myFilter' to urls: [/*]
+2017-11-01 15:22:39.668 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 15:22:33 CST 2017]; root of context hierarchy
+2017-11-01 15:22:39.861 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.single.myblog.web.HelloController.json()
+2017-11-01 15:22:39.866 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/hello]}" onto public java.lang.String com.single.myblog.web.HelloController.hello() throws com.single.myblog.handler.MyException
+2017-11-01 15:22:39.870 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user/list]}" onto public java.lang.String com.single.myblog.web.UserController.userList(java.lang.String)
+2017-11-01 15:22:39.886 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 15:22:39.887 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 15:22:39.984 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 15:22:39.984 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 15:22:40.042 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in restExceptionHandler
+2017-11-01 15:22:40.121 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 15:22:41.021 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-11-01 15:22:41.025 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-11-01 15:22:41.038 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-11-01 15:22:41.248 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http)
+2017-11-01 15:22:41.261 [main] INFO  com.single.myblog.Application -Started Application in 8.453 seconds (JVM running for 9.557)
+2017-11-01 15:23:10.934 [http-nio-8080-exec-8] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-01 15:23:10.935 [http-nio-8080-exec-8] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-01 15:23:11.011 [http-nio-8080-exec-8] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 75 ms
+2017-11-01 15:23:28.295 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Starting...
+2017-11-01 15:23:28.704 [http-nio-8080-exec-2] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Start completed.
+2017-11-01 15:23:29.016 [http-nio-8080-exec-2] INFO  c.s.m.handler.RestExceptionHandler -{"code":1002,"message":"类型转换异常"}
+2017-11-01 15:23:50.236 [http-nio-8080-exec-3] INFO  c.s.m.handler.RestExceptionHandler -{"code":1002,"message":"类型转换异常"}
+2017-11-01 15:23:58.342 [main] INFO  com.single.myblog.Application -Starting Application on PC-201606032119 with PID 8396 (E:\workspace\myblog\target\classes started by Administrator in E:\workspace\myblog)
+2017-11-01 15:23:58.346 [main] INFO  com.single.myblog.Application -No active profile set, falling back to default profiles: default
+2017-11-01 15:23:58.468 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 15:23:58 CST 2017]; root of context hierarchy
+2017-11-01 15:24:00.781 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2017-11-01 15:24:00.809 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2017-11-01 15:24:00.811 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-01 15:24:01.087 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-11-01 15:24:01.089 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2621 ms
+2017-11-01 15:24:01.403 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-01 15:24:01.408 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-01 15:24:01.411 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-01 15:24:01.412 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-01 15:24:01.413 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-01 15:24:01.413 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'myFilter' to urls: [/*]
+2017-11-01 15:24:02.491 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 15:23:58 CST 2017]; root of context hierarchy
+2017-11-01 15:24:02.640 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.single.myblog.web.HelloController.json()
+2017-11-01 15:24:02.642 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/hello]}" onto public java.lang.String com.single.myblog.web.HelloController.hello() throws com.single.myblog.handler.MyException
+2017-11-01 15:24:02.644 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user/list]}" onto public java.lang.String com.single.myblog.web.UserController.userList(java.lang.String)
+2017-11-01 15:24:02.654 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 15:24:02.655 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 15:24:02.721 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 15:24:02.721 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 15:24:02.751 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in restExceptionHandler
+2017-11-01 15:24:02.812 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 15:24:03.266 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-11-01 15:24:03.268 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-11-01 15:24:03.276 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-11-01 15:24:03.406 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http)
+2017-11-01 15:24:03.414 [main] INFO  com.single.myblog.Application -Started Application in 5.515 seconds (JVM running for 6.314)
+2017-11-01 15:24:08.806 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-01 15:24:08.807 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-01 15:24:08.849 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+2017-11-01 15:24:08.971 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Starting...
+2017-11-01 15:24:09.397 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Start completed.
+2017-11-01 15:36:43.853 [main] INFO  com.single.myblog.Application -Starting Application on PC-201606032119 with PID 9156 (E:\workspace\myblog\target\classes started by Administrator in E:\workspace\myblog)
+2017-11-01 15:36:43.856 [main] INFO  com.single.myblog.Application -No active profile set, falling back to default profiles: default
+2017-11-01 15:36:43.948 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 15:36:43 CST 2017]; root of context hierarchy
+2017-11-01 15:36:46.434 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2017-11-01 15:36:46.459 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2017-11-01 15:36:46.460 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-01 15:36:46.701 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-11-01 15:36:46.702 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2755 ms
+2017-11-01 15:36:46.979 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-01 15:36:46.986 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-01 15:36:46.987 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-01 15:36:46.988 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-01 15:36:46.989 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-01 15:36:46.989 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'myFilter' to urls: [/*]
+2017-11-01 15:36:47.988 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 15:36:43 CST 2017]; root of context hierarchy
+2017-11-01 15:36:48.125 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.single.myblog.web.HelloController.json()
+2017-11-01 15:36:48.128 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/hello]}" onto public java.lang.String com.single.myblog.web.HelloController.hello() throws com.single.myblog.handler.MyException
+2017-11-01 15:36:48.130 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user/list]}" onto public java.lang.String com.single.myblog.web.UserController.userList(java.lang.String)
+2017-11-01 15:36:48.138 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 15:36:48.139 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 15:36:48.196 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 15:36:48.197 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 15:36:48.230 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in restExceptionHandler
+2017-11-01 15:36:48.273 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 15:36:48.750 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-11-01 15:36:48.753 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-11-01 15:36:48.763 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-11-01 15:36:48.855 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http)
+2017-11-01 15:36:48.862 [main] INFO  com.single.myblog.Application -Started Application in 5.456 seconds (JVM running for 6.258)
+2017-11-01 15:37:00.844 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-01 15:37:00.845 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-01 15:37:00.887 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 42 ms
+2017-11-01 15:37:00.988 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Starting...
+2017-11-01 15:37:01.424 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Start completed.
+2017-11-01 16:00:02.922 [main] INFO  com.single.myblog.Application -Starting Application on PC-201606032119 with PID 5200 (E:\workspace\myblog\target\classes started by Administrator in E:\workspace\myblog)
+2017-11-01 16:00:02.927 [main] INFO  com.single.myblog.Application -No active profile set, falling back to default profiles: default
+2017-11-01 16:00:03.034 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 16:00:03 CST 2017]; root of context hierarchy
+2017-11-01 16:00:05.403 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2017-11-01 16:00:05.429 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2017-11-01 16:00:05.433 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-01 16:00:05.631 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-11-01 16:00:05.632 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2599 ms
+2017-11-01 16:00:05.986 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-01 16:00:05.992 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-01 16:00:05.993 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-01 16:00:05.994 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-01 16:00:05.995 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-01 16:00:05.996 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'myFilter' to urls: [/*]
+2017-11-01 16:00:06.986 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 16:00:03 CST 2017]; root of context hierarchy
+2017-11-01 16:00:07.112 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/recommend]}" onto public java.lang.String com.single.myblog.web.AricleController.recommend()
+2017-11-01 16:00:07.114 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.single.myblog.web.HelloController.json()
+2017-11-01 16:00:07.115 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/hello]}" onto public java.lang.String com.single.myblog.web.HelloController.hello() throws com.single.myblog.handler.MyException
+2017-11-01 16:00:07.117 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user/list]}" onto public java.lang.String com.single.myblog.web.UserController.userList(java.lang.String)
+2017-11-01 16:00:07.123 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 16:00:07.126 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 16:00:07.187 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:00:07.187 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:00:07.220 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in restExceptionHandler
+2017-11-01 16:00:07.276 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:00:07.774 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-11-01 16:00:07.778 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-11-01 16:00:07.788 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-11-01 16:00:07.926 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http)
+2017-11-01 16:00:07.936 [main] INFO  com.single.myblog.Application -Started Application in 5.478 seconds (JVM running for 6.471)
+2017-11-01 16:00:28.390 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-01 16:00:28.391 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-01 16:00:28.431 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+2017-11-01 16:00:28.506 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Starting...
+2017-11-01 16:00:28.949 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Start completed.
+2017-11-01 16:00:29.038 [http-nio-8080-exec-1] INFO  o.s.b.f.xml.XmlBeanDefinitionReader -Loading XML bean definitions from class path resource [org/springframework/jdbc/support/sql-error-codes.xml]
+2017-11-01 16:00:29.200 [http-nio-8080-exec-1] INFO  o.s.j.support.SQLErrorCodesFactory -SQLErrorCodes loaded: [DB2, Derby, H2, HSQL, Informix, MS-SQL, MySQL, Oracle, PostgreSQL, Sybase, Hana]
+2017-11-01 16:03:15.576 [main] INFO  com.single.myblog.Application -Starting Application on PC-201606032119 with PID 5348 (E:\workspace\myblog\target\classes started by Administrator in E:\workspace\myblog)
+2017-11-01 16:03:15.581 [main] INFO  com.single.myblog.Application -No active profile set, falling back to default profiles: default
+2017-11-01 16:03:15.685 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 16:03:15 CST 2017]; root of context hierarchy
+2017-11-01 16:03:18.180 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2017-11-01 16:03:18.208 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2017-11-01 16:03:18.210 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-01 16:03:18.383 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-11-01 16:03:18.384 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2699 ms
+2017-11-01 16:03:18.661 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-01 16:03:18.668 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-01 16:03:18.669 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-01 16:03:18.669 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-01 16:03:18.671 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-01 16:03:18.671 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'myFilter' to urls: [/*]
+2017-11-01 16:03:19.747 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 16:03:15 CST 2017]; root of context hierarchy
+2017-11-01 16:03:19.868 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/recommend]}" onto public java.lang.String com.single.myblog.web.AricleController.recommend()
+2017-11-01 16:03:19.871 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.single.myblog.web.HelloController.json()
+2017-11-01 16:03:19.873 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/hello]}" onto public java.lang.String com.single.myblog.web.HelloController.hello() throws com.single.myblog.handler.MyException
+2017-11-01 16:03:19.874 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user/list]}" onto public java.lang.String com.single.myblog.web.UserController.userList(java.lang.String)
+2017-11-01 16:03:19.882 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 16:03:19.885 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 16:03:19.944 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:03:19.945 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:03:19.977 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in restExceptionHandler
+2017-11-01 16:03:20.025 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:03:20.470 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-11-01 16:03:20.472 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-11-01 16:03:20.506 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-11-01 16:03:20.602 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http)
+2017-11-01 16:03:20.609 [main] INFO  com.single.myblog.Application -Started Application in 5.519 seconds (JVM running for 6.238)
+2017-11-01 16:03:28.547 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-01 16:03:28.548 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-01 16:03:28.591 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms
+2017-11-01 16:03:28.712 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Starting...
+2017-11-01 16:03:29.158 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Start completed.
+2017-11-01 16:11:12.647 [main] INFO  com.single.myblog.Application -Starting Application on PC-201606032119 with PID 224 (E:\workspace\myblog\target\classes started by Administrator in E:\workspace\myblog)
+2017-11-01 16:11:12.651 [main] INFO  com.single.myblog.Application -No active profile set, falling back to default profiles: default
+2017-11-01 16:11:12.760 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 16:11:12 CST 2017]; root of context hierarchy
+2017-11-01 16:11:15.059 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2017-11-01 16:11:15.082 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2017-11-01 16:11:15.085 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-01 16:11:15.280 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-11-01 16:11:15.281 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2521 ms
+2017-11-01 16:11:15.642 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-01 16:11:15.649 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-01 16:11:15.650 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-01 16:11:15.650 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-01 16:11:15.652 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-01 16:11:15.653 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'myFilter' to urls: [/*]
+2017-11-01 16:11:16.645 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 16:11:12 CST 2017]; root of context hierarchy
+2017-11-01 16:11:16.769 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/recommend]}" onto public java.lang.String com.single.myblog.web.AricleController.recommend()
+2017-11-01 16:11:16.775 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.single.myblog.web.HelloController.json()
+2017-11-01 16:11:16.777 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/hello]}" onto public java.lang.String com.single.myblog.web.HelloController.hello() throws com.single.myblog.handler.MyException
+2017-11-01 16:11:16.779 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user/list]}" onto public java.lang.String com.single.myblog.web.UserController.userList(java.lang.String)
+2017-11-01 16:11:16.786 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 16:11:16.788 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 16:11:16.842 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:11:16.842 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:11:16.879 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in restExceptionHandler
+2017-11-01 16:11:16.936 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:11:17.346 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-11-01 16:11:17.349 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-11-01 16:11:17.356 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-11-01 16:11:17.439 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http)
+2017-11-01 16:11:17.446 [main] INFO  com.single.myblog.Application -Started Application in 5.225 seconds (JVM running for 5.956)
+2017-11-01 16:11:25.612 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-01 16:11:25.613 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-01 16:11:25.650 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2017-11-01 16:11:25.726 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Starting...
+2017-11-01 16:11:26.160 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Start completed.
+2017-11-01 16:13:10.130 [main] INFO  com.single.myblog.Application -Starting Application on PC-201606032119 with PID 8008 (E:\workspace\myblog\target\classes started by Administrator in E:\workspace\myblog)
+2017-11-01 16:13:10.135 [main] INFO  com.single.myblog.Application -No active profile set, falling back to default profiles: default
+2017-11-01 16:13:10.222 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 16:13:10 CST 2017]; root of context hierarchy
+2017-11-01 16:13:12.514 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2017-11-01 16:13:12.540 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2017-11-01 16:13:12.543 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-01 16:13:12.721 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-11-01 16:13:12.723 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2501 ms
+2017-11-01 16:13:12.988 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-01 16:13:12.993 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-01 16:13:12.994 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-01 16:13:12.995 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-01 16:13:12.996 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-01 16:13:12.996 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'myFilter' to urls: [/*]
+2017-11-01 16:13:13.955 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 16:13:10 CST 2017]; root of context hierarchy
+2017-11-01 16:13:14.069 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/recommend]}" onto public java.lang.String com.single.myblog.web.AricleController.recommend()
+2017-11-01 16:13:14.071 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.single.myblog.web.HelloController.json()
+2017-11-01 16:13:14.072 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/hello]}" onto public java.lang.String com.single.myblog.web.HelloController.hello() throws com.single.myblog.handler.MyException
+2017-11-01 16:13:14.074 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user/list]}" onto public java.lang.String com.single.myblog.web.UserController.userList(java.lang.String)
+2017-11-01 16:13:14.080 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 16:13:14.082 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 16:13:14.151 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:13:14.151 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:13:14.194 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in restExceptionHandler
+2017-11-01 16:13:14.247 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:13:14.703 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-11-01 16:13:14.708 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-11-01 16:13:14.722 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-11-01 16:13:14.821 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http)
+2017-11-01 16:13:14.828 [main] INFO  com.single.myblog.Application -Started Application in 5.126 seconds (JVM running for 5.843)
+2017-11-01 16:13:19.487 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-01 16:13:19.488 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-01 16:13:19.528 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+2017-11-01 16:13:19.604 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Starting...
+2017-11-01 16:13:19.991 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Start completed.
+2017-11-01 16:17:22.100 [main] INFO  com.single.myblog.Application -Starting Application on PC-201606032119 with PID 4232 (E:\workspace\myblog\target\classes started by Administrator in E:\workspace\myblog)
+2017-11-01 16:17:22.104 [main] INFO  com.single.myblog.Application -No active profile set, falling back to default profiles: default
+2017-11-01 16:17:22.217 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 16:17:22 CST 2017]; root of context hierarchy
+2017-11-01 16:17:24.442 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2017-11-01 16:17:24.465 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2017-11-01 16:17:24.467 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-01 16:17:24.647 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-11-01 16:17:24.648 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2431 ms
+2017-11-01 16:17:24.919 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-01 16:17:24.925 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-01 16:17:24.927 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-01 16:17:24.927 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-01 16:17:24.928 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-01 16:17:24.929 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'myFilter' to urls: [/*]
+2017-11-01 16:17:25.965 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 16:17:22 CST 2017]; root of context hierarchy
+2017-11-01 16:17:26.107 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/recommend]}" onto public java.lang.String com.single.myblog.web.AricleController.recommend()
+2017-11-01 16:17:26.110 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.single.myblog.web.HelloController.json()
+2017-11-01 16:17:26.111 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/hello]}" onto public java.lang.String com.single.myblog.web.HelloController.hello() throws com.single.myblog.handler.MyException
+2017-11-01 16:17:26.114 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user/list]}" onto public java.lang.String com.single.myblog.web.UserController.userList(java.lang.String)
+2017-11-01 16:17:26.123 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 16:17:26.126 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 16:17:26.222 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:17:26.223 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:17:26.260 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in restExceptionHandler
+2017-11-01 16:17:26.323 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:17:26.789 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-11-01 16:17:26.792 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-11-01 16:17:26.799 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-11-01 16:17:26.896 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http)
+2017-11-01 16:17:26.901 [main] INFO  com.single.myblog.Application -Started Application in 5.25 seconds (JVM running for 6.076)
+2017-11-01 16:25:05.294 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-01 16:25:05.295 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-01 16:25:05.336 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+2017-11-01 16:25:05.869 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Starting...
+2017-11-01 16:25:06.454 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Start completed.
+2017-11-01 16:28:05.671 [main] INFO  com.single.myblog.Application -Starting Application on PC-201606032119 with PID 3984 (E:\workspace\myblog\target\classes started by Administrator in E:\workspace\myblog)
+2017-11-01 16:28:05.675 [main] INFO  com.single.myblog.Application -No active profile set, falling back to default profiles: default
+2017-11-01 16:28:05.771 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 16:28:05 CST 2017]; root of context hierarchy
+2017-11-01 16:28:08.395 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2017-11-01 16:28:08.416 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2017-11-01 16:28:08.418 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-01 16:28:08.624 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-11-01 16:28:08.625 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2854 ms
+2017-11-01 16:28:08.911 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-01 16:28:08.916 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-01 16:28:08.917 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-01 16:28:08.917 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-01 16:28:08.919 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-01 16:28:08.919 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'myFilter' to urls: [/*]
+2017-11-01 16:28:10.058 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 16:28:05 CST 2017]; root of context hierarchy
+2017-11-01 16:28:10.176 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/recommend]}" onto public java.lang.String com.single.myblog.web.AricleController.recommend()
+2017-11-01 16:28:10.178 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/hotClick]}" onto public java.lang.String com.single.myblog.web.AricleController.hotClick()
+2017-11-01 16:28:10.179 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.single.myblog.web.HelloController.json()
+2017-11-01 16:28:10.180 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/hello]}" onto public java.lang.String com.single.myblog.web.HelloController.hello() throws com.single.myblog.handler.MyException
+2017-11-01 16:28:10.182 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user/list]}" onto public java.lang.String com.single.myblog.web.UserController.userList(java.lang.String)
+2017-11-01 16:28:10.190 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 16:28:10.191 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 16:28:10.252 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:28:10.253 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:28:10.286 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in restExceptionHandler
+2017-11-01 16:28:10.332 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:28:10.855 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-11-01 16:28:10.857 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-11-01 16:28:10.865 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-11-01 16:28:11.026 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http)
+2017-11-01 16:28:11.033 [main] INFO  com.single.myblog.Application -Started Application in 5.826 seconds (JVM running for 6.692)
+2017-11-01 16:28:22.153 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-01 16:28:22.154 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-01 16:28:22.189 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2017-11-01 16:28:22.463 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Starting...
+2017-11-01 16:28:23.032 [http-nio-8080-exec-5] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Start completed.
+2017-11-01 16:35:07.670 [main] INFO  com.single.myblog.Application -Starting Application on PC-201606032119 with PID 11620 (E:\workspace\myblog\target\classes started by Administrator in E:\workspace\myblog)
+2017-11-01 16:35:07.673 [main] INFO  com.single.myblog.Application -No active profile set, falling back to default profiles: default
+2017-11-01 16:35:07.771 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 16:35:07 CST 2017]; root of context hierarchy
+2017-11-01 16:35:10.436 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2017-11-01 16:35:10.463 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2017-11-01 16:35:10.465 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-01 16:35:10.724 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-11-01 16:35:10.724 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2953 ms
+2017-11-01 16:35:11.062 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-01 16:35:11.072 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-01 16:35:11.072 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-01 16:35:11.073 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-01 16:35:11.074 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-01 16:35:11.074 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'myFilter' to urls: [/*]
+2017-11-01 16:35:12.090 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 16:35:07 CST 2017]; root of context hierarchy
+2017-11-01 16:35:12.229 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/recommend]}" onto public java.lang.String com.single.myblog.web.AricleController.recommend()
+2017-11-01 16:35:12.232 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/hotClick]}" onto public java.lang.String com.single.myblog.web.AricleController.hotClick()
+2017-11-01 16:35:12.235 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.single.myblog.web.HelloController.json()
+2017-11-01 16:35:12.239 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/hello]}" onto public java.lang.String com.single.myblog.web.HelloController.hello() throws com.single.myblog.handler.MyException
+2017-11-01 16:35:12.241 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user/list]}" onto public java.lang.String com.single.myblog.web.UserController.userList(java.lang.String)
+2017-11-01 16:35:12.248 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 16:35:12.250 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 16:35:12.317 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:35:12.317 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:35:12.345 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in restExceptionHandler
+2017-11-01 16:35:12.398 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 16:35:12.835 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-11-01 16:35:12.837 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-11-01 16:35:12.844 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-11-01 16:35:12.937 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http)
+2017-11-01 16:35:12.948 [main] INFO  com.single.myblog.Application -Started Application in 5.729 seconds (JVM running for 6.439)
+2017-11-01 16:35:39.681 [http-nio-8080-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-01 16:35:39.682 [http-nio-8080-exec-10] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-01 16:35:39.722 [http-nio-8080-exec-10] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 40 ms
+2017-11-01 16:35:39.975 [http-nio-8080-exec-8] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Starting...
+2017-11-01 16:35:40.432 [http-nio-8080-exec-8] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Start completed.
+2017-11-01 17:12:23.755 [main] INFO  com.single.myblog.Application -Starting Application on PC-201606032119 with PID 2268 (E:\workspace\myblog\target\classes started by Administrator in E:\workspace\myblog)
+2017-11-01 17:12:23.759 [main] INFO  com.single.myblog.Application -No active profile set, falling back to default profiles: default
+2017-11-01 17:12:23.856 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 17:12:23 CST 2017]; root of context hierarchy
+2017-11-01 17:12:26.099 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2017-11-01 17:12:26.123 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2017-11-01 17:12:26.125 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-01 17:12:26.361 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-11-01 17:12:26.361 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2505 ms
+2017-11-01 17:12:26.665 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-01 17:12:26.671 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-01 17:12:26.672 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-01 17:12:26.673 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-01 17:12:26.674 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-01 17:12:26.674 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'myFilter' to urls: [/*]
+2017-11-01 17:12:27.668 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 17:12:23 CST 2017]; root of context hierarchy
+2017-11-01 17:12:27.807 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/list]}" onto public java.lang.String com.single.myblog.web.AricleController.findList(java.lang.Integer,java.lang.Integer)
+2017-11-01 17:12:27.809 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/recommend]}" onto public java.lang.String com.single.myblog.web.AricleController.recommend()
+2017-11-01 17:12:27.810 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/hotClick]}" onto public java.lang.String com.single.myblog.web.AricleController.hotClick()
+2017-11-01 17:12:27.812 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.single.myblog.web.HelloController.json()
+2017-11-01 17:12:27.813 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/hello]}" onto public java.lang.String com.single.myblog.web.HelloController.hello() throws com.single.myblog.handler.MyException
+2017-11-01 17:12:27.816 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user/list]}" onto public java.lang.String com.single.myblog.web.UserController.userList(java.lang.String)
+2017-11-01 17:12:27.825 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 17:12:27.827 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 17:12:27.882 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 17:12:27.883 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 17:12:27.918 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in restExceptionHandler
+2017-11-01 17:12:27.970 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 17:12:28.400 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-11-01 17:12:28.403 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-11-01 17:12:28.413 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-11-01 17:12:28.500 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http)
+2017-11-01 17:12:28.509 [main] INFO  com.single.myblog.Application -Started Application in 5.202 seconds (JVM running for 5.904)
+2017-11-01 17:12:49.322 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-01 17:12:49.323 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-01 17:12:49.366 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 43 ms
+2017-11-01 17:12:50.070 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Starting...
+2017-11-01 17:12:50.565 [http-nio-8080-exec-4] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Start completed.
+2017-11-01 17:21:58.095 [main] INFO  com.single.myblog.Application -Starting Application on PC-201606032119 with PID 11808 (E:\workspace\myblog\target\classes started by Administrator in E:\workspace\myblog)
+2017-11-01 17:21:58.100 [main] INFO  com.single.myblog.Application -No active profile set, falling back to default profiles: default
+2017-11-01 17:21:58.196 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 17:21:58 CST 2017]; root of context hierarchy
+2017-11-01 17:22:00.592 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2017-11-01 17:22:00.616 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2017-11-01 17:22:00.618 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-01 17:22:00.828 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-11-01 17:22:00.829 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 2633 ms
+2017-11-01 17:22:01.151 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-01 17:22:01.159 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-01 17:22:01.160 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-01 17:22:01.160 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-01 17:22:01.162 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-01 17:22:01.163 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'myFilter' to urls: [/*]
+2017-11-01 17:22:02.197 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 17:21:58 CST 2017]; root of context hierarchy
+2017-11-01 17:22:02.323 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/recommend]}" onto public java.lang.String com.single.myblog.web.AricleController.recommend()
+2017-11-01 17:22:02.325 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/list]}" onto public java.lang.String com.single.myblog.web.AricleController.findList(java.lang.Integer,java.lang.Integer)
+2017-11-01 17:22:02.327 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/hotClick]}" onto public java.lang.String com.single.myblog.web.AricleController.hotClick()
+2017-11-01 17:22:02.329 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.single.myblog.web.HelloController.json()
+2017-11-01 17:22:02.331 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/hello]}" onto public java.lang.String com.single.myblog.web.HelloController.hello() throws com.single.myblog.handler.MyException
+2017-11-01 17:22:02.334 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user/list]}" onto public java.lang.String com.single.myblog.web.UserController.userList()
+2017-11-01 17:22:02.341 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 17:22:02.343 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 17:22:02.398 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 17:22:02.400 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 17:22:02.472 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in restExceptionHandler
+2017-11-01 17:22:02.523 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 17:22:02.946 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-11-01 17:22:02.948 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-11-01 17:22:02.956 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-11-01 17:22:03.063 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http)
+2017-11-01 17:22:03.076 [main] INFO  com.single.myblog.Application -Started Application in 5.472 seconds (JVM running for 6.231)
+2017-11-01 17:22:06.459 [http-nio-8080-exec-10] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-01 17:22:06.460 [http-nio-8080-exec-10] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-01 17:22:06.499 [http-nio-8080-exec-10] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 39 ms
+2017-11-01 17:22:06.757 [http-nio-8080-exec-7] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Starting...
+2017-11-01 17:22:07.279 [http-nio-8080-exec-7] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Start completed.
+2017-11-01 17:25:58.032 [main] INFO  com.single.myblog.Application -Starting Application on PC-201606032119 with PID 8908 (E:\workspace\myblog\target\classes started by Administrator in E:\workspace\myblog)
+2017-11-01 17:25:58.036 [main] INFO  com.single.myblog.Application -No active profile set, falling back to default profiles: default
+2017-11-01 17:25:58.135 [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext -Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 17:25:58 CST 2017]; root of context hierarchy
+2017-11-01 17:26:00.988 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat initialized with port(s): 8080 (http)
+2017-11-01 17:26:01.016 [main] INFO  o.a.catalina.core.StandardService -Starting service [Tomcat]
+2017-11-01 17:26:01.018 [main] INFO  o.a.catalina.core.StandardEngine -Starting Servlet Engine: Apache Tomcat/8.5.23
+2017-11-01 17:26:01.251 [localhost-startStop-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring embedded WebApplicationContext
+2017-11-01 17:26:01.252 [localhost-startStop-1] INFO  o.s.web.context.ContextLoader -Root WebApplicationContext: initialization completed in 3117 ms
+2017-11-01 17:26:01.605 [localhost-startStop-1] INFO  o.s.b.w.s.ServletRegistrationBean -Mapping servlet: 'dispatcherServlet' to [/]
+2017-11-01 17:26:01.611 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-11-01 17:26:01.615 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-11-01 17:26:01.616 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-11-01 17:26:01.617 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'requestContextFilter' to: [/*]
+2017-11-01 17:26:01.619 [localhost-startStop-1] INFO  o.s.b.w.s.FilterRegistrationBean -Mapping filter: 'myFilter' to urls: [/*]
+2017-11-01 17:26:02.735 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerAdapter -Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@14dd9eb7: startup date [Wed Nov 01 17:25:58 CST 2017]; root of context hierarchy
+2017-11-01 17:26:02.867 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/hotClick]}" onto public java.lang.String com.single.myblog.web.AricleController.hotClick()
+2017-11-01 17:26:02.870 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/recommend]}" onto public java.lang.String com.single.myblog.web.AricleController.recommend()
+2017-11-01 17:26:02.872 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/article/list]}" onto public java.lang.String com.single.myblog.web.AricleController.findList(java.lang.Integer,java.lang.Integer)
+2017-11-01 17:26:02.874 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/json]}" onto public java.util.Map<java.lang.String, java.lang.Object> com.single.myblog.web.HelloController.json()
+2017-11-01 17:26:02.874 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/hello]}" onto public java.lang.String com.single.myblog.web.HelloController.hello() throws com.single.myblog.handler.MyException
+2017-11-01 17:26:02.876 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/user/list]}" onto public java.lang.String com.single.myblog.web.UserController.userList()
+2017-11-01 17:26:02.890 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 17:26:02.892 [main] INFO  o.s.w.s.m.m.a.RequestMappingHandlerMapping -Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 17:26:02.988 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 17:26:02.989 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 17:26:03.016 [main] INFO  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver -Detected @ExceptionHandler methods in restExceptionHandler
+2017-11-01 17:26:03.108 [main] INFO  o.s.w.s.h.SimpleUrlHandlerMapping -Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 17:26:03.564 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Registering beans for JMX exposure on startup
+2017-11-01 17:26:03.568 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Bean with name 'dataSource' has been autodetected for JMX exposure
+2017-11-01 17:26:03.576 [main] INFO  o.s.j.e.a.AnnotationMBeanExporter -Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2017-11-01 17:26:03.669 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer -Tomcat started on port(s): 8080 (http)
+2017-11-01 17:26:03.679 [main] INFO  com.single.myblog.Application -Started Application in 6.076 seconds (JVM running for 6.771)
+2017-11-01 17:26:29.186 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] -Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-11-01 17:26:29.187 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization started
+2017-11-01 17:26:29.238 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet -FrameworkServlet 'dispatcherServlet': initialization completed in 50 ms
+2017-11-01 17:26:29.493 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Starting...
+2017-11-01 17:26:30.021 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource -testdb - Start completed.
